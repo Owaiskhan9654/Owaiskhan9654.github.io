@@ -29,31 +29,21 @@ export function Hero() {
           <motion.a
             {...reveal(0.05)}
             href="#experience"
-            className="glass group inline-flex items-center gap-3 rounded-2xl p-2 pr-5 transition-colors hover:border-brand-400/50"
+            aria-label="Ministry of Electronics & IT, Government of India"
+            className="group block max-w-md overflow-hidden rounded-2xl border border-white/15 shadow-xl ring-1 ring-white/5 transition-colors hover:border-brand-400/50"
           >
             <img
               src={profile.ministryPhoto}
               alt="Ministry of Electronics & IT, Government of India"
               loading="eager"
-              className="h-14 w-16 rounded-xl object-cover ring-1 ring-white/15"
+              className="h-44 w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />
-            <span className="pr-1 text-left">
-              <span className="block font-mono text-[11px] font-medium tracking-widest text-brand-600 uppercase dark:text-brand-400">
-                Currently
-              </span>
-              <span className="block font-display text-sm font-bold text-slate-900 dark:text-white">
-                {profile.currentTitle}
-              </span>
-              <span className="block text-xs text-slate-500 dark:text-slate-400">
-                {profile.currentOrg}
-              </span>
-            </span>
           </motion.a>
 
           <motion.a
             {...reveal(0.1)}
             href="#honors"
-            className="glass mt-3 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
+            className="glass mt-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
           >
             <Award size={15} className="text-brand-500 dark:text-brand-400" />
             TIME100 AI 2025 Honoree
