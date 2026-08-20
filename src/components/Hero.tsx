@@ -26,30 +26,28 @@ export function Hero() {
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="order-2 lg:order-1">
-          <motion.a
+          <motion.div
             {...reveal(0.05)}
-            href="#experience"
-            className="glass group inline-flex flex-col rounded-2xl px-4 py-2.5 text-left transition-colors hover:border-brand-400/50"
+            className="flex flex-wrap items-center gap-2.5"
           >
-            <span className="font-mono text-[11px] font-medium tracking-widest text-brand-600 uppercase dark:text-brand-400">
-              Currently
-            </span>
-            <span className="font-display text-sm font-bold text-slate-900 dark:text-white">
-              {profile.currentTitle}
-            </span>
-            <span className="text-xs text-slate-500 dark:text-slate-400">
-              {profile.currentOrg}
-            </span>
-          </motion.a>
-
-          <motion.a
-            {...reveal(0.1)}
-            href="#honors"
-            className="glass mt-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
-          >
-            <Award size={15} className="text-brand-500 dark:text-brand-400" />
-            TIME100 AI 2025 Honoree
-          </motion.a>
+            <a
+              href="#experience"
+              className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+              </span>
+              Data Science Manager · Ministry of Electronics &amp; IT
+            </a>
+            <a
+              href="#honors"
+              className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
+            >
+              <Award size={15} className="text-brand-500 dark:text-brand-400" />
+              TIME100 AI 2025 Honoree
+            </a>
+          </motion.div>
 
           <motion.p
             {...reveal(0.12)}
@@ -168,7 +166,7 @@ function Portrait() {
             src="/images/meity.jpg"
             alt="Owais Ahmad at the Ministry of Electronics & IT, Government of India"
             loading="eager"
-            className="aspect-[4/5] w-full object-cover"
+            className="aspect-[4/5] w-full object-cover object-top"
           />
         </div>
         <div className="pointer-events-none absolute inset-1.5 rounded-[1.35rem] ring-1 ring-inset ring-white/10" />
