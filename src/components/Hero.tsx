@@ -29,24 +29,16 @@ export function Hero() {
           <motion.a
             {...reveal(0.05)}
             href="#experience"
-            className="glass group inline-flex items-center gap-3 rounded-2xl p-2 pr-5 transition-colors hover:border-brand-400/50"
+            className="glass group inline-flex flex-col rounded-2xl px-4 py-2.5 text-left transition-colors hover:border-brand-400/50"
           >
-            <img
-              src={profile.ministryPhoto}
-              alt="Ministry of Electronics & IT, Government of India"
-              loading="eager"
-              className="h-14 w-16 rounded-xl object-cover ring-1 ring-white/15"
-            />
-            <span className="pr-1 text-left">
-              <span className="block font-mono text-[11px] font-medium tracking-widest text-brand-600 uppercase dark:text-brand-400">
-                Currently
-              </span>
-              <span className="block font-display text-sm font-bold text-slate-900 dark:text-white">
-                {profile.currentTitle}
-              </span>
-              <span className="block text-xs text-slate-500 dark:text-slate-400">
-                {profile.currentOrg}
-              </span>
+            <span className="font-mono text-[11px] font-medium tracking-widest text-brand-600 uppercase dark:text-brand-400">
+              Currently
+            </span>
+            <span className="font-display text-sm font-bold text-slate-900 dark:text-white">
+              {profile.currentTitle}
+            </span>
+            <span className="text-xs text-slate-500 dark:text-slate-400">
+              {profile.currentOrg}
             </span>
           </motion.a>
 
@@ -173,10 +165,10 @@ function Portrait() {
       <div className="animate-float-y relative overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/5 p-1.5 shadow-2xl shadow-brand-500/20 backdrop-blur-sm">
         <div className="overflow-hidden rounded-[1.35rem]">
           <img
-            src="/images/digital-india.jpg"
-            alt="Owais Ahmad at the Ministry of Electronics & IT — Digital India"
+            src="/images/meity.jpg"
+            alt="Owais Ahmad at the Ministry of Electronics & IT, Government of India"
             loading="eager"
-            className="aspect-[4/5] w-full object-cover object-top"
+            className="aspect-[4/5] w-full object-cover"
           />
         </div>
         <div className="pointer-events-none absolute inset-1.5 rounded-[1.35rem] ring-1 ring-inset ring-white/10" />
