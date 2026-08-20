@@ -13,7 +13,7 @@ export function Gallery() {
         </>
       }
     >
-      <div className="grid auto-rows-[200px] grid-cols-2 gap-4 sm:auto-rows-[240px] md:grid-cols-4">
+      <div className="grid auto-rows-[200px] grid-flow-dense grid-cols-2 gap-4 sm:auto-rows-[240px] md:grid-cols-4">
         {gallery.map((item, i) => (
           <motion.figure
             key={item.src}

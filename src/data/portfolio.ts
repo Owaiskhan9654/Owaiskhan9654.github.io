@@ -7,6 +7,9 @@ export const profile = {
   email: "owaiskhan9654@gmail.com",
   phone: "+91-9515884381",
   resume: "/Owais_Ahmad_Delhi_7_YOE_resume.pdf",
+  currentTitle: "Data Science Manager",
+  currentOrg: "Ministry of Electronics & IT · Govt. of India",
+  ministryPhoto: "/images/ministry-steps.jpg",
   summary:
     "AI & Data Science Manager with 7+ years of experience building enterprise-scale Generative AI, Machine Learning, and MLOps systems across government and enterprise domains. I specialize in production-grade LLM systems, Agentic AI workflows, RAG pipelines, model evaluation, and cloud-native AI infrastructure using IBM watsonx.ai, Azure OpenAI, IBM Cloud, and Azure ML.",
   socials: {
@@ -20,8 +23,8 @@ export const profile = {
 export const stats: { label: string; value: string }[] = [
   { label: "Years of experience", value: "7+" },
   { label: "Production GenAI/MLOps systems", value: "10+" },
+  { label: "LinkedIn followers", value: "20K+" },
   { label: "Open-source repositories", value: "196" },
-  { label: "TIME100 AI Honoree", value: "2025" },
 ];
 
 export type Experience = {
@@ -267,6 +270,12 @@ export const honors: Honor[] = [
     year: "2023",
   },
   {
+    title: "Resource Person — DPSRU International Workshop",
+    detail:
+      "Invited resource person on Text Mining & Knowledge Graph approaches in modern pharmacology (TMKGP-2026), Delhi Pharmaceutical Sciences & Research University.",
+    year: "2026",
+  },
+  {
     title: "Springer Publication",
     detail:
       "Multi-Label Text Classification of PubMed Documents using Deep Learning — M.Tech research at JNU.",
@@ -312,8 +321,38 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   {
+    src: "/images/ministry-steps.jpg",
+    caption: "Ministry of Electronics & IT — HQ, New Delhi",
+    span: "wide",
+  },
+  {
+    src: "/images/finance.jpg",
+    caption: "Ministry of Finance · Dept. of Expenditure",
+    span: "tall",
+  },
+  {
+    src: "/images/digital-india.jpg",
+    caption: "Digital India · Power to Empower",
+    span: "tall",
+  },
+  {
+    src: "/images/meity-office.jpg",
+    caption: "MeitY · Office of the Joint Secretary",
+    span: "wide",
+  },
+  {
+    src: "/images/nvidia.jpg",
+    caption: "At NVIDIA",
+    span: "wide",
+  },
+  {
+    src: "/images/cga.jpg",
+    caption: "Controller General of Accounts",
+    span: "wide",
+  },
+  {
     src: "/images/meity.jpg",
-    caption: "Ministry of Electronics & IT, Govt. of India",
+    caption: "MeitY, Govt. of India",
     span: "tall",
   },
   {
@@ -322,8 +361,28 @@ export const gallery: GalleryItem[] = [
     span: "tall",
   },
   {
+    src: "/images/ibm-gratitude.jpg",
+    caption: "IBM Impact — Gratitude 2025",
+    span: "tall",
+  },
+  {
     src: "/images/aadhaar.jpg",
     caption: "UIDAI · Aadhaar HQ",
+    span: "tall",
+  },
+  {
+    src: "/images/presenting.jpg",
+    caption: "Presenting a geospatial ML system",
+    span: "wide",
+  },
+  {
+    src: "/images/award-dpsru.jpg",
+    caption: "Resource Person · DPSRU Intl. Workshop",
+    span: "tall",
+  },
+  {
+    src: "/images/redfort.jpg",
+    caption: "Heritage — Red Fort, Delhi",
     span: "tall",
   },
   {

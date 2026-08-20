@@ -3,7 +3,6 @@ import {
   ArrowDown,
   Award,
   Github,
-  Landmark,
   Linkedin,
   Mail,
   MapPin,
@@ -27,25 +26,38 @@ export function Hero() {
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="order-2 lg:order-1">
-          <motion.div
+          <motion.a
             {...reveal(0.05)}
-            className="flex flex-wrap items-center gap-2"
+            href="#experience"
+            className="glass group inline-flex items-center gap-3 rounded-2xl p-2 pr-5 transition-colors hover:border-brand-400/50"
           >
-            <a
-              href="#experience"
-              className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
-            >
-              <Landmark size={15} className="text-brand-500 dark:text-brand-400" />
-              Ministry of Electronics &amp; IT, Govt. of India
-            </a>
-            <a
-              href="#honors"
-              className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
-            >
-              <Award size={15} className="text-brand-500 dark:text-brand-400" />
-              TIME100 AI 2025 Honoree
-            </a>
-          </motion.div>
+            <img
+              src={profile.ministryPhoto}
+              alt="Ministry of Electronics & IT, Government of India"
+              loading="eager"
+              className="h-14 w-16 rounded-xl object-cover ring-1 ring-white/15"
+            />
+            <span className="pr-1 text-left">
+              <span className="block font-mono text-[11px] font-medium tracking-widest text-brand-600 uppercase dark:text-brand-400">
+                Currently
+              </span>
+              <span className="block font-display text-sm font-bold text-slate-900 dark:text-white">
+                {profile.currentTitle}
+              </span>
+              <span className="block text-xs text-slate-500 dark:text-slate-400">
+                {profile.currentOrg}
+              </span>
+            </span>
+          </motion.a>
+
+          <motion.a
+            {...reveal(0.1)}
+            href="#honors"
+            className="glass mt-3 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
+          >
+            <Award size={15} className="text-brand-500 dark:text-brand-400" />
+            TIME100 AI 2025 Honoree
+          </motion.a>
 
           <motion.p
             {...reveal(0.12)}
