@@ -155,10 +155,10 @@ function Portrait() {
       <div className="animate-float-y relative overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/5 p-1.5 shadow-2xl shadow-brand-500/20 backdrop-blur-sm">
         <div className="overflow-hidden rounded-[1.35rem]">
           <img
-            src="/images/meity.jpg"
+            src="/images/hero-meity.jpg"
             alt="Owais Ahmad at the Ministry of Electronics & IT, Government of India"
             loading="eager"
-            className="aspect-[4/5] w-full object-cover object-top"
+            className="aspect-[4/5] w-full object-cover"
           />
         </div>
         <div className="pointer-events-none absolute inset-1.5 rounded-[1.35rem] ring-1 ring-inset ring-white/10" />
