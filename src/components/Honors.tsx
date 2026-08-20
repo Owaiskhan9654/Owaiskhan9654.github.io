@@ -12,7 +12,7 @@ const iconFor = (title: string) => {
 
 export function Honors() {
   return (
-    <Section id="honors" eyebrow="05 — Recognition" title="Honors & education">
+    <Section id="honors" eyebrow="06 — Recognition" title="Honors & education">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="space-y-4">
           <h3 className="font-display text-lg font-semibold text-slate-900 dark:text-white">

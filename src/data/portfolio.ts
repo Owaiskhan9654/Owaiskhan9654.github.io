@@ -304,11 +304,46 @@ export const education: Education[] = [
   },
 ];
 
+export type GalleryItem = {
+  src: string;
+  caption: string;
+  span?: "tall" | "wide";
+};
+
+export const gallery: GalleryItem[] = [
+  {
+    src: "/images/meity.jpg",
+    caption: "Ministry of Electronics & IT, Govt. of India",
+    span: "tall",
+  },
+  {
+    src: "/images/google.jpg",
+    caption: "At Google",
+    span: "tall",
+  },
+  {
+    src: "/images/aadhaar.jpg",
+    caption: "UIDAI · Aadhaar HQ",
+    span: "tall",
+  },
+  {
+    src: "/images/mountains.jpg",
+    caption: "Off the clock — Rishikesh",
+    span: "wide",
+  },
+  {
+    src: "/images/path.jpg",
+    caption: "Finding signal in the noise",
+    span: "tall",
+  },
+];
+
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Honors", href: "#honors" },
   { label: "Contact", href: "#contact" },
 ];

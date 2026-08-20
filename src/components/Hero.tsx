@@ -6,39 +6,28 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  Sparkles,
 } from "lucide-react";
 import { profile } from "../data/portfolio";
 import { KaggleIcon } from "./icons";
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.09, delayChildren: 0.1 } },
-};
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
-};
+// Explicit, self-contained entrance reveal (no variant propagation).
+const reveal = (delay: number) => ({
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5, delay, ease: "easeOut" as const },
+});
 
 export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-screen items-center overflow-hidden px-5 pt-24 pb-16 sm:px-8"
+      className="relative flex min-h-screen items-center overflow-hidden px-5 pt-28 pb-20 sm:px-8"
     >
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute top-[-10%] left-[10%] h-[36rem] w-[36rem] rounded-full bg-brand-500/20 blur-[140px] dark:bg-brand-500/25" />
-        <div className="absolute right-[5%] bottom-[0%] h-[32rem] w-[32rem] rounded-full bg-cyan-accent/15 blur-[140px] dark:bg-cyan-accent/20" />
-      </div>
-
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className="mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]"
-      >
-        <div>
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="order-2 lg:order-1">
           <motion.a
-            variants={item}
+            {...reveal(0.05)}
             href="#honors"
             className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
           >
@@ -46,35 +35,42 @@ export function Hero() {
             TIME100 AI 2025 Honoree
           </motion.a>
 
+          <motion.p
+            {...reveal(0.12)}
+            className="mt-6 flex items-center gap-2 font-mono text-sm text-brand-600 dark:text-brand-400"
+          >
+            <Sparkles size={14} /> Hi, I'm
+          </motion.p>
+
           <motion.h1
-            variants={item}
-            className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white"
+            {...reveal(0.18)}
+            className="mt-2 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white"
           >
             {profile.name}
           </motion.h1>
 
           <motion.p
-            variants={item}
-            className="mt-4 font-display text-xl font-semibold sm:text-2xl"
+            {...reveal(0.24)}
+            className="mt-3 font-display text-xl font-semibold sm:text-2xl"
           >
             <span className="text-gradient">{profile.role}</span>
           </motion.p>
 
           <motion.p
-            variants={item}
+            {...reveal(0.3)}
             className="mt-5 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg dark:text-slate-300"
           >
             {profile.tagline}
           </motion.p>
 
           <motion.div
-            variants={item}
+            {...reveal(0.36)}
             className="mt-4 flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400"
           >
             <MapPin size={15} /> {profile.location}
           </motion.div>
 
-          <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
+          <motion.div {...reveal(0.42)} className="mt-8 flex flex-wrap gap-3">
             <a
               href="#projects"
               className="rounded-lg bg-gradient-to-r from-brand-500 to-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 transition-transform hover:scale-[1.03]"
@@ -89,7 +85,7 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.div variants={item} className="mt-8 flex items-center gap-3">
+          <motion.div {...reveal(0.48)} className="mt-8 flex items-center gap-3">
             {[
               { href: profile.socials.github, label: "GitHub", Icon: Github },
               { href: profile.socials.linkedin, label: "LinkedIn", Icon: Linkedin },
@@ -118,10 +114,10 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <motion.div variants={item} className="relative">
-          <TerminalCard />
+        <motion.div {...reveal(0.3)} className="relative order-1 lg:order-2">
+          <Portrait />
         </motion.div>
-      </motion.div>
+      </div>
 
       <motion.a
         href="#about"
@@ -143,53 +139,60 @@ export function Hero() {
   );
 }
 
-function TerminalCard() {
+function Portrait() {
   return (
-    <div className="glass rounded-2xl p-1 shadow-2xl shadow-brand-500/10">
-      <div className="rounded-xl bg-slate-950/90 font-mono text-[13px] leading-relaxed text-slate-300">
-        <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
-          <span className="h-3 w-3 rounded-full bg-red-400/80" />
-          <span className="h-3 w-3 rounded-full bg-yellow-400/80" />
-          <span className="h-3 w-3 rounded-full bg-green-400/80" />
-          <span className="ml-2 text-xs text-slate-500">owais@ai — profile.py</span>
+    <div className="relative mx-auto w-full max-w-sm">
+      {/* Glow ring */}
+      <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-brand-500/40 via-cyan-accent/30 to-fuchsia-500/30 opacity-70 blur-2xl" />
+
+      {/* Frame */}
+      <div className="animate-float-y relative overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/5 p-1.5 shadow-2xl shadow-brand-500/20 backdrop-blur-sm">
+        <div className="overflow-hidden rounded-[1.35rem]">
+          <img
+            src="/images/hero-portrait.jpg"
+            alt="Owais Ahmad"
+            width={1200}
+            height={1500}
+            loading="eager"
+            className="aspect-[4/5] w-full object-cover"
+          />
         </div>
-        <div className="space-y-1.5 p-5">
-          <p>
-            <span className="text-brand-400">class</span>{" "}
-            <span className="text-cyan-accent">Engineer</span>:
-          </p>
-          <p className="pl-4">
-            name = <span className="text-emerald-400">"Owais Ahmad"</span>
-          </p>
-          <p className="pl-4">
-            focus = [
-            <span className="text-emerald-400">"GenAI"</span>,{" "}
-            <span className="text-emerald-400">"LLMs"</span>,{" "}
-            <span className="text-emerald-400">"MLOps"</span>]
-          </p>
-          <p className="pl-4">
-            stack = [
-            <span className="text-emerald-400">"watsonx"</span>,{" "}
-            <span className="text-emerald-400">"Azure"</span>,{" "}
-            <span className="text-emerald-400">"LangGraph"</span>]
-          </p>
-          <p className="pl-4">
-            experience = <span className="text-amber-300">7</span> <span className="text-slate-500"># years</span>
-          </p>
-          <p className="pt-2">
-            <span className="text-brand-400">def</span>{" "}
-            <span className="text-cyan-accent">ship</span>(self):
-          </p>
-          <p className="pl-4">
-            <span className="text-brand-400">return</span>{" "}
-            <span className="text-emerald-400">"production-grade AI"</span>
-          </p>
-          <p className="pt-2 text-slate-500">
-            <span className="text-green-400">$</span> deploying...{" "}
-            <span className="animate-pulse">▋</span>
-          </p>
-        </div>
+        <div className="pointer-events-none absolute inset-1.5 rounded-[1.35rem] ring-1 ring-inset ring-white/10" />
       </div>
+
+      {/* Floating stat badges */}
+      <motion.div
+        {...reveal(0.4)}
+        className="absolute -left-5 top-8 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-left-9 dark:border-white/10 dark:bg-slate-900/85"
+      >
+        <div className="font-display text-2xl font-bold text-gradient">7+</div>
+        <div className="text-xs font-medium text-slate-600 dark:text-slate-300">
+          Years in AI
+        </div>
+      </motion.div>
+
+      <motion.div
+        {...reveal(0.47)}
+        className="absolute -right-4 bottom-20 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-right-9 dark:border-white/10 dark:bg-slate-900/85"
+      >
+        <div className="font-display text-2xl font-bold text-gradient">10+</div>
+        <div className="text-xs font-medium text-slate-600 dark:text-slate-300">
+          GenAI systems
+        </div>
+      </motion.div>
+
+      <motion.div
+        {...reveal(0.54)}
+        className="absolute -bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/60 bg-white/90 px-4 py-2 shadow-2xl shadow-black/20 backdrop-blur-md dark:border-white/10 dark:bg-slate-900/85"
+      >
+        <span className="relative flex h-2.5 w-2.5">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+        </span>
+        <span className="text-xs font-medium whitespace-nowrap text-slate-700 dark:text-slate-200">
+          Open to collaboration
+        </span>
+      </motion.div>
     </div>
   );
 }

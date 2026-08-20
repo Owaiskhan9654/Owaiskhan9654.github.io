@@ -16,7 +16,7 @@ export function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="06 — Contact"
+      eyebrow="07 — Contact"
       title={
         <>
           Let&apos;s build something <span className="text-gradient">intelligent</span>
