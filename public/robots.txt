@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://owaiskhan9654.github.io/sitemap.xml

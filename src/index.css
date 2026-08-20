@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (toggle via .dark on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Brand accents */
+  --color-brand-50: #eef0ff;
+  --color-brand-100: #e0e2ff;
+  --color-brand-200: #c6c8ff;
+  --color-brand-300: #a5a3ff;
+  --color-brand-400: #8b81ff;
+  --color-brand-500: #7c6cff;
+  --color-brand-600: #6a4ff0;
+  --color-brand-700: #5a3fd0;
+  --color-brand-800: #4933a8;
+  --color-brand-900: #3d2f85;
+
+  --color-cyan-accent: #22d3ee;
+
+  --animate-marquee: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+:root {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #0b0f1a;
+}
+
+.dark body {
+  background-color: #070810;
+  color: #e6e8f0;
+}
+
+/* Selection */
+::selection {
+  background: color-mix(in srgb, var(--color-brand-500) 35%, transparent);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-brand-500) 40%, transparent);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-500);
+}
+
+/* Reusable utilities */
+@utility text-gradient {
+  background: linear-gradient(
+    120deg,
+    var(--color-brand-400),
+    var(--color-cyan-accent)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility glass {
+  background: color-mix(in srgb, #ffffff 6%, transparent);
+  backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in srgb, #ffffff 12%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

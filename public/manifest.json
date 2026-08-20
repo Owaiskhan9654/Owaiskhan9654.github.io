@@ -1,0 +1,14 @@
+{
+  "name": "Owais Ahmad — AI & Data Science Manager",
+  "short_name": "Owais Ahmad",
+  "description": "Portfolio of Owais Ahmad — AI & Data Science Manager. Generative AI, LLM & MLOps.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070810",
+  "theme_color": "#070810",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-384x384.png", "sizes": "384x384", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
