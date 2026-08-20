@@ -52,6 +52,27 @@
           else document.documentElement.classList.add("dark");
         } catch (e) {}
       })();
+
+      // Clean up the legacy Create-React-App service worker + caches that could
+      // otherwise serve a stale/broken version of the site to returning visitors.
+      (function () {
+        try {
+          if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function (regs) {
+              regs.forEach(function (r) {
+                r.unregister();
+              });
+            });
+          }
+          if (window.caches && caches.keys) {
+            caches.keys().then(function (keys) {
+              keys.forEach(function (k) {
+                caches.delete(k);
+              });
+            });
+          }
+        } catch (e) {}
+      })();
     </script>
   </head>
   <body>
