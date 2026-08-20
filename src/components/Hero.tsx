@@ -6,7 +6,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Sparkles,
 } from "lucide-react";
 import { profile } from "../data/portfolio";
 import { KaggleIcon } from "./icons";
@@ -49,16 +48,9 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.p
-            {...reveal(0.12)}
-            className="mt-6 flex items-center gap-2 font-mono text-sm text-brand-600 dark:text-brand-400"
-          >
-            <Sparkles size={14} /> Hi, I'm
-          </motion.p>
-
           <motion.h1
-            {...reveal(0.18)}
-            className="mt-2 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white"
+            {...reveal(0.14)}
+            className="mt-8 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white"
           >
             {profile.name}
           </motion.h1>
