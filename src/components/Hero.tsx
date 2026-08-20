@@ -3,6 +3,7 @@ import {
   ArrowDown,
   Award,
   Github,
+  Landmark,
   Linkedin,
   Mail,
   MapPin,
@@ -26,14 +27,25 @@ export function Hero() {
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="order-2 lg:order-1">
-          <motion.a
+          <motion.div
             {...reveal(0.05)}
-            href="#honors"
-            className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
+            className="flex flex-wrap items-center gap-2"
           >
-            <Award size={15} className="text-brand-500 dark:text-brand-400" />
-            TIME100 AI 2025 Honoree
-          </motion.a>
+            <a
+              href="#experience"
+              className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
+            >
+              <Landmark size={15} className="text-brand-500 dark:text-brand-400" />
+              Ministry of Electronics &amp; IT, Govt. of India
+            </a>
+            <a
+              href="#honors"
+              className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-brand-600 dark:text-slate-200 dark:hover:text-brand-300"
+            >
+              <Award size={15} className="text-brand-500 dark:text-brand-400" />
+              TIME100 AI 2025 Honoree
+            </a>
+          </motion.div>
 
           <motion.p
             {...reveal(0.12)}
