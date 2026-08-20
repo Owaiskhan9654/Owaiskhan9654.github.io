@@ -9,7 +9,7 @@ export const profile = {
   resume: "/Owais_Ahmad_Delhi_7_YOE_resume.pdf",
   currentTitle: "Data Science Manager",
   currentOrg: "Ministry of Electronics & IT · Govt. of India",
-  ministryPhoto: "/images/meity.jpg",
+  ministryPhoto: "/images/ministry-steps.jpg",
   summary:
     "AI & Data Science Manager with 7+ years of experience building enterprise-scale Generative AI, Machine Learning, and MLOps systems across government and enterprise domains. I specialize in production-grade LLM systems, Agentic AI workflows, RAG pipelines, model evaluation, and cloud-native AI infrastructure using IBM watsonx.ai, Azure OpenAI, IBM Cloud, and Azure ML.",
   socials: {
