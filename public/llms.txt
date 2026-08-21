@@ -1,0 +1,24 @@
+# Owais Ahmad
+
+> AI & Data Science Manager with 7+ years building enterprise-scale Generative AI, LLM, and MLOps systems across government and enterprise domains. Currently at the Ministry of Electronics & Information Technology (NeGD), Government of India.
+
+## About
+- Name: Owais Ahmad
+- Role: AI & Data Science Manager
+- Location: New Delhi, India
+- Focus: Generative AI, LLM systems, Agentic AI, RAG pipelines, LLM evaluation, MLOps, biomedical NLP.
+- Prior: Senior AI Engineer at IBM (watsonx.ai, IBM Granite); Data Scientist Consultant at Hindustan Unilever (Azure OpenAI); Data Scientist at Canary Global.
+- Education: M.Tech in Statistical Computing (Data Science), Jawaharlal Nehru University (JNU); GATE qualified. B.Tech CS & IT, MANUU.
+
+## Publications (Springer)
+- Information Analysis Using Biomedical Text Mining (2024): https://link.springer.com/chapter/10.1007/978-981-97-3962-2_3
+- Multilabel Text Classification in Biomedical Domain (2024): https://link.springer.com/chapter/10.1007/978-981-97-3962-2_14
+- BioBERT-Based Model for COVID-Related Named Entity Recognition (2023): https://link.springer.com/chapter/10.1007/978-981-99-5085-0_32
+- Hybridizing Sentence Transformer Model with Multi-KNN for Biomedical Documents (2022): https://link.springer.com/chapter/10.1007/978-981-16-6460-1_11
+
+## Links
+- Portfolio: https://owaiskhan9654.github.io/
+- GitHub: https://github.com/owaiskhan9654
+- LinkedIn: https://www.linkedin.com/in/owaiskhan9654/
+- Kaggle: https://www.kaggle.com/owaiskhan9654
+- Topmate (1:1 sessions): https://topmate.io/owaiskhan9654

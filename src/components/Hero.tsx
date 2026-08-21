@@ -158,7 +158,7 @@ function Portrait() {
       <div className="animate-float-y relative overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/5 p-1.5 shadow-2xl shadow-brand-500/20 backdrop-blur-sm">
         <div className="overflow-hidden rounded-[1.35rem]">
           <img
-            src="/images/meity.jpg"
+            src="/images/meity.webp"
             alt="Owais Ahmad at the Ministry of Electronics & IT, Government of India"
             width={1685}
             height={2247}

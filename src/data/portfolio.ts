@@ -9,7 +9,7 @@ export const profile = {
   resume: "/Owais_Ahmad_Delhi_7_YOE_resume.pdf",
   currentTitle: "Data Science Manager",
   currentOrg: "Ministry of Electronics & IT · Govt. of India",
-  ministryPhoto: "/images/ministry-steps.jpg",
+  ministryPhoto: "/images/ministry-steps.webp",
   summary:
     "AI & Data Science Manager with 7+ years of experience building enterprise-scale Generative AI, Machine Learning, and MLOps systems across government and enterprise domains. I specialize in production-grade LLM systems, Agentic AI workflows, RAG pipelines, model evaluation, and cloud-native AI infrastructure using IBM watsonx.ai, Azure OpenAI, IBM Cloud, and Azure ML.",
   socials: {
@@ -328,102 +328,102 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   {
-    src: "/images/book-rag.jpg",
+    src: "/images/book-rag.webp",
     caption: "Unlocking Data with Generative AI & RAG",
     span: "tall",
   },
   {
-    src: "/images/ministry-steps.jpg",
+    src: "/images/ministry-steps.webp",
     caption: "Ministry of Electronics & IT — HQ, New Delhi",
     span: "wide",
   },
   {
-    src: "/images/finance.jpg",
+    src: "/images/finance.webp",
     caption: "Ministry of Finance · Dept. of Expenditure",
     span: "tall",
   },
   {
-    src: "/images/digital-india.jpg",
+    src: "/images/digital-india.webp",
     caption: "Digital India · Power to Empower",
     span: "tall",
   },
   {
-    src: "/images/meity-office.jpg",
+    src: "/images/meity-office.webp",
     caption: "MeitY · Office of the Joint Secretary",
     span: "wide",
   },
   {
-    src: "/images/nvidia.jpg",
+    src: "/images/nvidia.webp",
     caption: "At NVIDIA",
     span: "wide",
   },
   {
-    src: "/images/cga.jpg",
+    src: "/images/cga.webp",
     caption: "Controller General of Accounts",
     span: "wide",
   },
   {
-    src: "/images/meity.jpg",
+    src: "/images/meity.webp",
     caption: "MeitY, Govt. of India",
     span: "tall",
   },
   {
-    src: "/images/google.jpg",
+    src: "/images/google.webp",
     caption: "At Google",
     span: "tall",
   },
   {
-    src: "/images/google2.jpg",
+    src: "/images/google2.webp",
     caption: "Google · Gurugram",
     span: "wide",
   },
   {
-    src: "/images/microsoft.jpg",
+    src: "/images/microsoft.webp",
     caption: "At Microsoft",
     span: "wide",
   },
   {
-    src: "/images/ibm-gratitude.jpg",
+    src: "/images/ibm-gratitude.webp",
     caption: "IBM Impact — Gratitude 2025",
     span: "tall",
   },
   {
-    src: "/images/workshop-talk.jpg",
+    src: "/images/workshop-talk.webp",
     caption: "Speaking at a workshop",
     span: "wide",
   },
   {
-    src: "/images/dpsru-lamp.jpg",
+    src: "/images/dpsru-lamp.webp",
     caption: "Inaugurating the DPSRU workshop",
     span: "wide",
   },
   {
-    src: "/images/aadhaar.jpg",
+    src: "/images/aadhaar.webp",
     caption: "UIDAI · Aadhaar HQ",
     span: "tall",
   },
   {
-    src: "/images/presenting.jpg",
+    src: "/images/presenting.webp",
     caption: "Presenting a geospatial ML system",
     span: "wide",
   },
   {
-    src: "/images/award-dpsru.jpg",
+    src: "/images/award-dpsru.webp",
     caption: "Resource Person · DPSRU Intl. Workshop",
     span: "tall",
   },
   {
-    src: "/images/redfort.jpg",
+    src: "/images/redfort.webp",
     caption: "Heritage — Red Fort, Delhi",
     span: "tall",
   },
   {
-    src: "/images/mountains.jpg",
+    src: "/images/mountains.webp",
     caption: "Off the clock — Rishikesh",
     span: "wide",
   },
   {
-    src: "/images/path.jpg",
+    src: "/images/path.webp",
     caption: "Finding signal in the noise",
     span: "tall",
   },
