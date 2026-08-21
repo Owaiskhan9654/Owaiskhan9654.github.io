@@ -22,10 +22,10 @@ export const profile = {
 };
 
 export const stats: { label: string; value: string }[] = [
-  { label: "Years of experience", value: "7+" },
-  { label: "Production GenAI/MLOps systems", value: "10+" },
-  { label: "LinkedIn followers", value: "20K+" },
-  { label: "Open-source repositories", value: "196" },
+  { label: "LinkedIn followers", value: "23K+" },
+  { label: "GitHub commits", value: "2.6K+" },
+  { label: "Production AI systems", value: "10+" },
+  { label: "Years in AI", value: "7+" },
 ];
 
 export type Experience = {

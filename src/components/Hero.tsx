@@ -4,6 +4,7 @@ import {
   Award,
   CalendarCheck,
   Github,
+  Landmark,
   Linkedin,
   Mail,
   MapPin,
@@ -186,12 +187,19 @@ function Portrait() {
 
       <motion.div
         {...reveal(0.47)}
-        className="absolute -right-4 bottom-20 hidden rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-right-9 sm:block dark:border-white/10 dark:bg-slate-900/85"
+        className="absolute -right-4 bottom-20 hidden items-center gap-2.5 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-right-9 sm:flex dark:border-white/10 dark:bg-slate-900/85"
       >
-        <div className="font-display text-2xl font-bold text-gradient">4</div>
-        <div className="text-xs font-medium text-slate-600 dark:text-slate-300">
-          Springer chapters
-        </div>
+        <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-cyan-accent text-white shadow-lg shadow-brand-500/30">
+          <Landmark size={17} />
+        </span>
+        <span className="text-left">
+          <span className="block font-display text-sm font-bold text-slate-900 dark:text-white">
+            Shipping AI in Govt.
+          </span>
+          <span className="block text-[11px] text-slate-500 dark:text-slate-400">
+            ministries &amp; departments
+          </span>
+        </span>
       </motion.div>
 
       <motion.div
