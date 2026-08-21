@@ -16,6 +16,7 @@ export const profile = {
     github: "https://github.com/owaiskhan9654",
     linkedin: "https://www.linkedin.com/in/owaiskhan9654/",
     kaggle: "https://www.kaggle.com/owaiskhan9654",
+    topmate: "https://topmate.io/owaiskhan9654",
     linktree: "https://linktr.ee/owaiskhan9654",
   },
 };
@@ -270,6 +271,12 @@ export const honors: Honor[] = [
     year: "2023",
   },
   {
+    title: "Kaggle ML Research Spotlight — Special Winner",
+    detail:
+      "Recognized by Google's Kaggle for a standout machine-learning research contribution.",
+    year: "2022",
+  },
+  {
     title: "Resource Person — DPSRU International Workshop",
     detail:
       "Invited resource person on Text Mining & Knowledge Graph approaches in modern pharmacology (TMKGP-2026), Delhi Pharmaceutical Sciences & Research University.",
@@ -321,6 +328,11 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   {
+    src: "/images/book-rag.jpg",
+    caption: "Unlocking Data with Generative AI & RAG",
+    span: "tall",
+  },
+  {
     src: "/images/ministry-steps.jpg",
     caption: "Ministry of Electronics & IT — HQ, New Delhi",
     span: "wide",
@@ -361,9 +373,29 @@ export const gallery: GalleryItem[] = [
     span: "tall",
   },
   {
+    src: "/images/google2.jpg",
+    caption: "Google · Gurugram",
+    span: "wide",
+  },
+  {
+    src: "/images/microsoft.jpg",
+    caption: "At Microsoft",
+    span: "wide",
+  },
+  {
     src: "/images/ibm-gratitude.jpg",
     caption: "IBM Impact — Gratitude 2025",
     span: "tall",
+  },
+  {
+    src: "/images/workshop-talk.jpg",
+    caption: "Speaking at a workshop",
+    span: "wide",
+  },
+  {
+    src: "/images/dpsru-lamp.jpg",
+    caption: "Inaugurating the DPSRU workshop",
+    span: "wide",
   },
   {
     src: "/images/aadhaar.jpg",
@@ -397,11 +429,47 @@ export const gallery: GalleryItem[] = [
   },
 ];
 
+export type Publication = {
+  title: string;
+  venue: string;
+  year: string;
+  href: string;
+};
+
+export const publications: Publication[] = [
+  {
+    title: "Information Analysis Using Biomedical Text Mining",
+    venue: "Springer · with Dr. Aditi Sharan",
+    year: "2024",
+    href: "https://link.springer.com/chapter/10.1007/978-981-97-3962-2_3",
+  },
+  {
+    title: "Multilabel Text Classification in Biomedical Domain",
+    venue: "Springer · with Dr. Aditi Sharan",
+    year: "2024",
+    href: "https://link.springer.com/chapter/10.1007/978-981-97-3962-2_14",
+  },
+  {
+    title: "BioBERT-Based Model for COVID-Related Named Entity Recognition",
+    venue: "Springer · with G. K. Soni & Dr. Aditi Sharan",
+    year: "2023",
+    href: "https://link.springer.com/chapter/10.1007/978-981-99-5085-0_32",
+  },
+  {
+    title:
+      "Hybridizing Sentence Transformer Model with Multi-KNN for Biomedical Documents",
+    venue: "Springer · with Dr. Aditi Sharan & S. Sood",
+    year: "2022",
+    href: "https://link.springer.com/chapter/10.1007/978-981-16-6460-1_11",
+  },
+];
+
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Publications", href: "#publications" },
   { label: "Gallery", href: "#gallery" },
   { label: "Honors", href: "#honors" },
   { label: "Contact", href: "#contact" },

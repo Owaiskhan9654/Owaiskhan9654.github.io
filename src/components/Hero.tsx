@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import {
   ArrowDown,
   Award,
+  CalendarCheck,
   Github,
   Linkedin,
   Mail,
@@ -96,6 +97,7 @@ export function Hero() {
             {[
               { href: profile.socials.github, label: "GitHub", Icon: Github },
               { href: profile.socials.linkedin, label: "LinkedIn", Icon: Linkedin },
+              { href: profile.socials.topmate, label: "Topmate", Icon: CalendarCheck },
               { href: `mailto:${profile.email}`, label: "Email", Icon: Mail },
             ].map(({ href, label, Icon }) => (
               <a

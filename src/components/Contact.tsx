@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUpRight, CalendarCheck } from "lucide-react";
 import { Section } from "./Section";
 import { profile } from "../data/portfolio";
 import { KaggleIcon, LinktreeIcon } from "./icons";
@@ -7,6 +7,7 @@ import { KaggleIcon, LinktreeIcon } from "./icons";
 const links = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}`, Icon: Mail },
   { label: "LinkedIn", value: "in/owaiskhan9654", href: profile.socials.linkedin, Icon: Linkedin },
+  { label: "Topmate", value: "Book a 1:1 session", href: profile.socials.topmate, Icon: CalendarCheck },
   { label: "GitHub", value: "owaiskhan9654", href: profile.socials.github, Icon: Github },
   { label: "Kaggle", value: "owaiskhan9654", href: profile.socials.kaggle, Icon: KaggleIcon },
   { label: "Linktree", value: "linktr.ee/owaiskhan9654", href: profile.socials.linktree, Icon: LinktreeIcon },
@@ -16,7 +17,7 @@ export function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="07 — Contact"
+      eyebrow="08 — Contact"
       title={
         <>
           Let&apos;s build something <span className="text-gradient">intelligent</span>
