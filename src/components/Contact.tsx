@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Github, Linkedin, Mail, ArrowUpRight, CalendarCheck } from "lucide-react";
 import { Section } from "./Section";
 import { profile } from "../data/portfolio";
-import { KaggleIcon, LinktreeIcon } from "./icons";
+import { KaggleIcon } from "./icons";
 
 const links = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}`, Icon: Mail },
@@ -10,17 +10,16 @@ const links = [
   { label: "Topmate", value: "Book a 1:1 session", href: profile.socials.topmate, Icon: CalendarCheck },
   { label: "GitHub", value: "owaiskhan9654", href: profile.socials.github, Icon: Github },
   { label: "Kaggle", value: "owaiskhan9654", href: profile.socials.kaggle, Icon: KaggleIcon },
-  { label: "Linktree", value: "linktr.ee/owaiskhan9654", href: profile.socials.linktree, Icon: LinktreeIcon },
 ];
 
 export function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="08 — Contact"
+      eyebrow="Contact"
       title={
         <>
-          Let&apos;s build something <span className="text-gradient">intelligent</span>
+          Let&apos;s <span className="text-gradient">talk</span>
         </>
       }
     >
@@ -39,7 +38,7 @@ export function Contact() {
             href={`mailto:${profile.email}`}
             className="mt-6 inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-brand-500 to-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 transition-transform hover:scale-[1.03]"
           >
-            <Mail size={16} /> Say hello
+            <Mail size={16} /> Email me
           </a>
         </motion.div>
 

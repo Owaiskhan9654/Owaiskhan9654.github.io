@@ -7,7 +7,6 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Rocket,
 } from "lucide-react";
 import { profile } from "../data/portfolio";
 import { KaggleIcon } from "./icons";
@@ -50,19 +49,24 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.h1
-            {...reveal(0.14)}
-            className="mt-8 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white"
+          <motion.p
+            {...reveal(0.12)}
+            className="mt-7 font-display text-lg font-semibold text-slate-700 dark:text-slate-200"
           >
             {profile.name}
-          </motion.h1>
-
-          <motion.p
-            {...reveal(0.24)}
-            className="mt-3 font-display text-xl font-semibold sm:text-2xl"
-          >
-            <span className="text-gradient">{profile.role}</span>
+            <span className="font-normal text-slate-400 dark:text-slate-500">
+              {" · "}
+              {profile.role}
+            </span>
           </motion.p>
+
+          <motion.h1
+            {...reveal(0.18)}
+            className="mt-3 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white"
+          >
+            Production-grade AI, from{" "}
+            <span className="text-gradient">enterprise to national scale</span>.
+          </motion.h1>
 
           <motion.p
             {...reveal(0.3)}
@@ -182,19 +186,12 @@ function Portrait() {
 
       <motion.div
         {...reveal(0.47)}
-        className="absolute -right-4 bottom-20 hidden items-center gap-2.5 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-right-9 sm:flex dark:border-white/10 dark:bg-slate-900/85"
+        className="absolute -right-4 bottom-20 hidden rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-right-9 sm:block dark:border-white/10 dark:bg-slate-900/85"
       >
-        <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-cyan-accent text-white shadow-lg shadow-brand-500/30">
-          <Rocket size={17} />
-        </span>
-        <span className="text-left">
-          <span className="block font-display text-sm font-bold text-slate-900 dark:text-white">
-            Research → Production
-          </span>
-          <span className="block text-[11px] text-slate-500 dark:text-slate-400">
-            AI that ships
-          </span>
-        </span>
+        <div className="font-display text-2xl font-bold text-gradient">4</div>
+        <div className="text-xs font-medium text-slate-600 dark:text-slate-300">
+          Springer chapters
+        </div>
       </motion.div>
 
       <motion.div

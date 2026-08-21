@@ -123,6 +123,14 @@ body {
 
 /* Reusable utilities */
 @utility text-gradient {
+  /* Light mode: darker violet -> teal so it clears WCAG AA contrast on white. */
+  background: linear-gradient(120deg, #5a3fd0, #0e7490);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* Dark mode: brighter stops for contrast on the near-black background. */
+.dark .text-gradient {
   background: linear-gradient(
     120deg,
     var(--color-brand-400),
@@ -134,8 +142,13 @@ body {
 }
 
 @utility glass {
-  background: color-mix(in srgb, #ffffff 6%, transparent);
+  /* Light mode: subtle tint + a visible border on white backgrounds. */
+  background: color-mix(in srgb, #0b0f1a 3%, transparent);
   backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in srgb, #0b0f1a 14%, transparent);
+}
+.dark .glass {
+  background: color-mix(in srgb, #ffffff 6%, transparent);
   border: 1px solid color-mix(in srgb, #ffffff 12%, transparent);
 }
 

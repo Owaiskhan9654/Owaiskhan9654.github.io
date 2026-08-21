@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <Section
       id="projects"
-      eyebrow="04 — Work"
+      eyebrow="Work"
       title="Featured projects"
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

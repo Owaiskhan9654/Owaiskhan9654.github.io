@@ -4,7 +4,7 @@ import { profile, stats } from "../data/portfolio";
 
 export function About() {
   return (
-    <Section id="about" eyebrow="01 — About" title="Who I am">
+    <Section id="about" eyebrow="About" title="Who I am">
       <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
         <motion.p
           initial={{ opacity: 0, y: 20 }}

@@ -4,7 +4,7 @@ import { skillGroups } from "../data/portfolio";
 
 export function Skills() {
   return (
-    <Section id="skills" eyebrow="03 — Toolkit" title="Skills & technologies">
+    <Section id="skills" eyebrow="Toolkit" title="Skills & technologies">
       <div className="grid gap-5 sm:grid-cols-2">
         {skillGroups.map((group, i) => (
           <motion.div

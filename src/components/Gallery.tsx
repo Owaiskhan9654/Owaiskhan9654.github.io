@@ -6,7 +6,7 @@ export function Gallery() {
   return (
     <Section
       id="gallery"
-      eyebrow="06 — Moments"
+      eyebrow="Moments"
       title={
         <>
           Beyond the <span className="text-gradient">code</span>

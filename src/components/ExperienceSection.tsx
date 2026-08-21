@@ -5,7 +5,7 @@ import { experience } from "../data/portfolio";
 
 export function ExperienceSection() {
   return (
-    <Section id="experience" eyebrow="02 — Career" title="Where I've worked">
+    <Section id="experience" eyebrow="Career" title="Where I've worked">
       <div className="relative">
         <div className="absolute top-2 bottom-2 left-[15px] w-px bg-gradient-to-b from-brand-500/60 via-slate-300 to-transparent sm:left-[19px] dark:via-white/10" />
         <div className="space-y-10">

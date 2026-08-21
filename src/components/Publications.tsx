@@ -7,7 +7,7 @@ export function Publications() {
   return (
     <Section
       id="publications"
-      eyebrow="05 — Research"
+      eyebrow="Research"
       title={
         <>
           Publications &amp; <span className="text-gradient">research</span>

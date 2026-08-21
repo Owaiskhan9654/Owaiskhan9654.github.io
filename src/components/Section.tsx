@@ -13,14 +13,14 @@ export function Section({ id, eyebrow, title, children, className }: SectionProp
   return (
     <section
       id={id}
-      className={`relative mx-auto w-full max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8 md:py-28 ${className ?? ""}`}
+      className={`relative mx-auto w-full max-w-6xl scroll-mt-24 px-5 py-16 sm:px-8 md:py-20 ${className ?? ""}`}
     >
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="mb-12"
+        className="mb-8"
       >
         <p className="mb-3 font-mono text-sm font-medium tracking-widest text-brand-500 uppercase dark:text-brand-400">
           {eyebrow}

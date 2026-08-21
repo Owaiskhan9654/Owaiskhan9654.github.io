@@ -329,7 +329,7 @@ export type GalleryItem = {
 export const gallery: GalleryItem[] = [
   {
     src: "/images/book-rag.webp",
-    caption: "Unlocking Data with Generative AI & RAG",
+    caption: "Reading Keith Bourne's RAG book",
     span: "tall",
   },
   {
