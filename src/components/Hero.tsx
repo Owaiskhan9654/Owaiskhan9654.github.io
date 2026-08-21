@@ -25,8 +25,8 @@ export function Hero() {
       id="top"
       className="relative flex min-h-screen items-center overflow-hidden px-5 pt-28 pb-20 sm:px-8"
     >
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="order-2 lg:order-1">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-10 sm:gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="order-1 lg:order-1">
           <motion.div
             {...reveal(0.05)}
             className="flex flex-wrap items-center gap-2.5"
@@ -123,7 +123,7 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <motion.div {...reveal(0.3)} className="relative order-1 lg:order-2">
+        <motion.div {...reveal(0.3)} className="relative order-2 lg:order-2">
           <Portrait />
         </motion.div>
       </div>
@@ -172,7 +172,7 @@ function Portrait() {
       {/* Floating stat badges */}
       <motion.div
         {...reveal(0.4)}
-        className="absolute -left-5 top-8 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-left-9 dark:border-white/10 dark:bg-slate-900/85"
+        className="absolute -left-5 top-8 hidden rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-left-9 sm:block dark:border-white/10 dark:bg-slate-900/85"
       >
         <div className="font-display text-2xl font-bold text-gradient">7+</div>
         <div className="text-xs font-medium text-slate-600 dark:text-slate-300">
@@ -182,7 +182,7 @@ function Portrait() {
 
       <motion.div
         {...reveal(0.47)}
-        className="absolute -right-4 bottom-20 flex items-center gap-2.5 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-right-9 dark:border-white/10 dark:bg-slate-900/85"
+        className="absolute -right-4 bottom-20 hidden items-center gap-2.5 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-2xl shadow-black/20 backdrop-blur-md sm:-right-9 sm:flex dark:border-white/10 dark:bg-slate-900/85"
       >
         <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-cyan-accent text-white shadow-lg shadow-brand-500/30">
           <Rocket size={17} />
@@ -199,7 +199,7 @@ function Portrait() {
 
       <motion.div
         {...reveal(0.54)}
-        className="absolute -bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/60 bg-white/90 px-4 py-2 shadow-2xl shadow-black/20 backdrop-blur-md dark:border-white/10 dark:bg-slate-900/85"
+        className="absolute -bottom-5 left-1/2 hidden -translate-x-1/2 items-center gap-2 rounded-full border border-white/60 bg-white/90 px-4 py-2 shadow-2xl shadow-black/20 backdrop-blur-md sm:flex dark:border-white/10 dark:bg-slate-900/85"
       >
         <span className="relative flex h-2.5 w-2.5">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
