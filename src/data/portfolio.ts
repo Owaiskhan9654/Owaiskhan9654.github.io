@@ -441,12 +441,40 @@ export const publications: Publication[] = [
   },
 ];
 
+export const topmate = {
+  url: "https://topmate.io/owaiskhan9654",
+  rating: "4.7",
+  ratingsCount: 43,
+  testimonials: 31,
+  badges: ["Top 0.1%", "People's Choice", "Community Care", "Verified"],
+  services: [
+    { title: "1:1 Mentorship", meta: "30 min · Video call" },
+    { title: "Resume Review", meta: "15 min · Most popular" },
+    { title: "Career Guidance", meta: "60 min · Video call" },
+    { title: "Mock Interview", meta: "45 min · Video call" },
+    { title: "Interview Prep & Tips", meta: "15 min · Video call" },
+    { title: "Have a question?", meta: "Priority DM · Free" },
+  ],
+  quotes: [
+    {
+      quote:
+        "I gained valuable insights that will help me improve and prepare better.",
+      author: "Mentee",
+    },
+    {
+      quote: "A clear path forward — genuinely helpful career guidance.",
+      author: "Returning mentee",
+    },
+  ],
+};
+
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Publications", href: "#publications" },
+  { label: "Mentorship", href: "#mentorship" },
   { label: "Gallery", href: "#gallery" },
   { label: "Honors", href: "#honors" },
   { label: "Contact", href: "#contact" },

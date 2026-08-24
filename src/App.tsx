@@ -7,6 +7,7 @@ import { ExperienceSection } from "./components/ExperienceSection";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Publications } from "./components/Publications";
+import { Mentorship } from "./components/Mentorship";
 import { Gallery } from "./components/Gallery";
 import { Honors } from "./components/Honors";
 import { Contact } from "./components/Contact";
@@ -31,6 +32,7 @@ export default function App() {
         <Skills />
         <Projects />
         <Publications />
+        <Mentorship />
         <Gallery />
         <Honors />
         <Contact />
