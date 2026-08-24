@@ -18,7 +18,7 @@ export const profile = {
 };
 
 export const stats: { label: string; value: string }[] = [
-  { label: "LinkedIn followers", value: "23K+" },
+  { label: "LinkedIn followers", value: "24K+" },
   { label: "GitHub commits", value: "2.6K+" },
   { label: "Production AI systems", value: "10+" },
   { label: "Years in AI", value: "7+" },
