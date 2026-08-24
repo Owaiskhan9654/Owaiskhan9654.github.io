@@ -327,20 +327,22 @@ export type GalleryItem = {
 };
 
 export const gallery: GalleryItem[] = [
+  // Ordered by importance: government first, then industry, work & recognition,
+  // with the (someone else's) book demoted below the professional shots.
   {
-    src: "/images/book-rag.webp",
-    caption: "Reading Keith Bourne's RAG book",
+    src: "/images/finance.webp",
+    caption: "Ministry of Finance · Dept. of Expenditure",
+    span: "tall",
+  },
+  {
+    src: "/images/aadhaar.webp",
+    caption: "UIDAI · Aadhaar HQ",
     span: "tall",
   },
   {
     src: "/images/ministry-steps.webp",
     caption: "Ministry of Electronics & IT — HQ, New Delhi",
     span: "wide",
-  },
-  {
-    src: "/images/finance.webp",
-    caption: "Ministry of Finance · Dept. of Expenditure",
-    span: "tall",
   },
   {
     src: "/images/digital-india.webp",
@@ -350,11 +352,6 @@ export const gallery: GalleryItem[] = [
   {
     src: "/images/meity-office.webp",
     caption: "MeitY · Office of the Joint Secretary",
-    span: "wide",
-  },
-  {
-    src: "/images/nvidia.webp",
-    caption: "At NVIDIA",
     span: "wide",
   },
   {
@@ -368,14 +365,14 @@ export const gallery: GalleryItem[] = [
     span: "tall",
   },
   {
+    src: "/images/nvidia.webp",
+    caption: "At NVIDIA",
+    span: "wide",
+  },
+  {
     src: "/images/google.webp",
     caption: "At Google",
     span: "tall",
-  },
-  {
-    src: "/images/google2.webp",
-    caption: "Google · Gurugram",
-    span: "wide",
   },
   {
     src: "/images/microsoft.webp",
@@ -383,9 +380,24 @@ export const gallery: GalleryItem[] = [
     span: "wide",
   },
   {
+    src: "/images/google2.webp",
+    caption: "Google · Gurugram",
+    span: "wide",
+  },
+  {
     src: "/images/ibm-gratitude.webp",
     caption: "IBM Impact — Gratitude 2025",
     span: "tall",
+  },
+  {
+    src: "/images/award-dpsru.webp",
+    caption: "Resource Person · DPSRU Intl. Workshop",
+    span: "tall",
+  },
+  {
+    src: "/images/presenting.webp",
+    caption: "Presenting a geospatial ML system",
+    span: "wide",
   },
   {
     src: "/images/workshop-talk.webp",
@@ -398,18 +410,8 @@ export const gallery: GalleryItem[] = [
     span: "wide",
   },
   {
-    src: "/images/aadhaar.webp",
-    caption: "UIDAI · Aadhaar HQ",
-    span: "tall",
-  },
-  {
-    src: "/images/presenting.webp",
-    caption: "Presenting a geospatial ML system",
-    span: "wide",
-  },
-  {
-    src: "/images/award-dpsru.webp",
-    caption: "Resource Person · DPSRU Intl. Workshop",
+    src: "/images/book-rag.webp",
+    caption: "Reading Keith Bourne's RAG book",
     span: "tall",
   },
   {
