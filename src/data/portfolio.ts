@@ -7,9 +7,6 @@ export const profile = {
   email: "owaiskhan9654@gmail.com",
   phone: "+91-9515884381",
   resume: "/Owais_Ahmad_Delhi_7_YOE_resume.pdf",
-  currentTitle: "Data Science Manager",
-  currentOrg: "Ministry of Electronics & IT · Govt. of India",
-  ministryPhoto: "/images/ministry-steps.webp",
   summary:
     "AI & Data Science Manager with 7+ years of experience building enterprise-scale Generative AI, Machine Learning, and MLOps systems across government and enterprise domains. I specialize in production-grade LLM systems, Agentic AI workflows, RAG pipelines, model evaluation, and cloud-native AI infrastructure using IBM watsonx.ai, Azure OpenAI, IBM Cloud, and Azure ML.",
   socials: {
@@ -17,7 +14,6 @@ export const profile = {
     linkedin: "https://www.linkedin.com/in/owaiskhan9654/",
     kaggle: "https://www.kaggle.com/owaiskhan9654",
     topmate: "https://topmate.io/owaiskhan9654",
-    linktree: "https://linktr.ee/owaiskhan9654",
   },
 };
 
@@ -323,7 +319,6 @@ export const education: Education[] = [
 export type GalleryItem = {
   src: string;
   caption: string;
-  span?: "tall" | "wide";
 };
 
 export const gallery: GalleryItem[] = [
@@ -332,102 +327,82 @@ export const gallery: GalleryItem[] = [
   {
     src: "/images/finance.webp",
     caption: "Ministry of Finance · Dept. of Expenditure",
-    span: "tall",
   },
   {
     src: "/images/aadhaar.webp",
     caption: "UIDAI · Aadhaar HQ",
-    span: "tall",
   },
   {
     src: "/images/ministry-steps.webp",
     caption: "Ministry of Electronics & IT — HQ, New Delhi",
-    span: "wide",
   },
   {
     src: "/images/digital-india.webp",
     caption: "Digital India · Power to Empower",
-    span: "tall",
   },
   {
     src: "/images/meity-office.webp",
     caption: "MeitY · Office of the Joint Secretary",
-    span: "wide",
   },
   {
     src: "/images/cga.webp",
     caption: "Controller General of Accounts",
-    span: "wide",
   },
   {
     src: "/images/meity.webp",
     caption: "MeitY, Govt. of India",
-    span: "tall",
   },
   {
     src: "/images/nvidia.webp",
     caption: "At NVIDIA",
-    span: "wide",
   },
   {
     src: "/images/google.webp",
     caption: "At Google",
-    span: "tall",
   },
   {
     src: "/images/microsoft.webp",
     caption: "At Microsoft",
-    span: "wide",
   },
   {
     src: "/images/google2.webp",
     caption: "Google · Gurugram",
-    span: "wide",
   },
   {
     src: "/images/ibm-gratitude.webp",
     caption: "IBM Impact — Gratitude 2025",
-    span: "tall",
   },
   {
     src: "/images/award-dpsru.webp",
     caption: "Resource Person · DPSRU Intl. Workshop",
-    span: "tall",
   },
   {
     src: "/images/presenting.webp",
     caption: "Presenting a geospatial ML system",
-    span: "wide",
   },
   {
     src: "/images/workshop-talk.webp",
     caption: "Speaking at a workshop",
-    span: "wide",
   },
   {
     src: "/images/dpsru-lamp.webp",
     caption: "Inaugurating the DPSRU workshop",
-    span: "wide",
   },
   {
     src: "/images/book-rag.webp",
     caption: "Reading Keith Bourne's RAG book",
-    span: "tall",
   },
   {
     src: "/images/redfort.webp",
     caption: "Heritage — Red Fort, Delhi",
-    span: "tall",
   },
   {
     src: "/images/mountains.webp",
     caption: "Off the clock — Rishikesh",
-    span: "wide",
   },
   {
     src: "/images/path.webp",
     caption: "Finding signal in the noise",
-    span: "tall",
   },
 ];
 

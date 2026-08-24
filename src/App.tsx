@@ -1,3 +1,4 @@
+import { MotionConfig } from "motion/react";
 import { Aurora } from "./components/Aurora";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
@@ -13,7 +14,8 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="relative min-h-screen">
+    <MotionConfig reducedMotion="user">
+      <div className="relative min-h-screen">
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
@@ -34,6 +36,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-    </div>
+      </div>
+    </MotionConfig>
   );
 }
