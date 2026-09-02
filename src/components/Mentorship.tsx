@@ -30,14 +30,23 @@ export function Mentorship() {
 
           <div className="mt-5 flex flex-wrap items-end gap-x-8 gap-y-4">
             <div>
-              <div className="flex items-center gap-1.5">
-                <Star size={22} className="fill-amber-400 text-amber-400" />
+              <div className="flex items-baseline gap-1.5">
+                <Star size={22} className="translate-y-0.5 fill-amber-400 text-amber-400" />
                 <span className="font-display text-3xl font-bold text-slate-900 dark:text-white">
                   {topmate.rating}
                 </span>
+                <span className="text-lg font-semibold text-slate-400">/5</span>
               </div>
               <div className="mt-1 text-sm text-slate-500 dark:text-slate-400">
                 {topmate.ratingsCount} ratings
+              </div>
+            </div>
+            <div>
+              <div className="font-display text-3xl font-bold text-gradient">
+                {topmate.bookings}
+              </div>
+              <div className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                bookings
               </div>
             </div>
             <div>
@@ -113,10 +122,9 @@ export function Mentorship() {
                   {s.meta}
                 </span>
               </span>
-              <ArrowUpRight
-                size={16}
-                className="text-slate-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
+              <span className="shrink-0 text-sm font-bold text-brand-600 dark:text-brand-300">
+                {s.price}
+              </span>
             </motion.a>
           ))}
         </div>

@@ -445,15 +445,19 @@ export const topmate = {
   url: "https://topmate.io/owaiskhan9654",
   rating: "4.7",
   ratingsCount: 43,
+  bookings: 256,
   testimonials: 31,
-  badges: ["Top 0.1%", "People's Choice", "Community Care", "Verified"],
+  // Topmate achievement badges (exactly as on the profile).
+  badges: ["People's Choice", "Community Care", "Top 0.1%"],
   services: [
-    { title: "1:1 Mentorship", meta: "30 min · Video call" },
-    { title: "Resume Review", meta: "15 min · Most popular" },
-    { title: "Career Guidance", meta: "60 min · Video call" },
-    { title: "Mock Interview", meta: "45 min · Video call" },
-    { title: "Interview Prep & Tips", meta: "15 min · Video call" },
-    { title: "Have a question?", meta: "Priority DM · Free" },
+    { title: "1:1 Mentorship", meta: "30 min · Video", price: "₹999" },
+    { title: "Resume Review", meta: "15 min · Video · Popular", price: "₹729" },
+    { title: "Career Guidance", meta: "60 min · Video", price: "₹799" },
+    { title: "Mock Interview", meta: "45 min · Video", price: "₹199" },
+    { title: "Interview Prep & Tips", meta: "15 min · Video", price: "₹199" },
+    { title: "Quick Chat", meta: "30 min · Video", price: "₹739" },
+    { title: "Let's Connect 👋", meta: "30 min · Video", price: "₹199" },
+    { title: "Have a question?", meta: "Priority DM", price: "Free" },
   ],
   quotes: [
     {
